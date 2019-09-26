@@ -488,3 +488,16 @@ def extract_correlation(restact, story_mask, math_mask):
     r_corr, _ = pearsonr(langmath_sig, langmath_sig)
     return r_corr
 
+
+def get_uppertriu_value(raw_mat):
+    """
+    """
+    assert raw_mat.ndim == 3, "Only used as a mat transform function."
+    new_mat = []
+    for i in range(raw_mat.shape[0]):
+        mat_temp = raw_mat[i,...]
+        new_mat.append(mat_temp[np.triu_indices(raw_mat.shape[1],1)])
+    return np.array(new_mat)
+
+
+
