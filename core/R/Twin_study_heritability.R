@@ -14,8 +14,8 @@ source('Heritability_model_function.R')
 #                  'R_aIPS', 'R_dIPS', 'R_SPL', 'R_MTL', 'R_latSMA', 'R_MFG', 'R_INS', 'R_medSMA', 'R_vlPFC')
 
 # Load Data
-data <- read.csv('D:/code/pycharm_code/StoryMath_heritability/data/pc1_act_system_vx100.csv')
-roiname_all <- c('story', 'math')
+data <- read.csv('D:/code/pycharm_code/StoryMath_heritability/data/domain_difference.csv')
+roiname_all <- c('rsfc_seg_lh', 'rsfc_seg_rh', 'myelin_seg_lh', 'myelin_seg_rh', 'thick_seg_lh', 'thick_seg_rh', 'alff_seg_lh', 'alff_seg_rh', 'act_seg_lh', 'act_seg_rh')
 
 ACE_h2estimate_matric <- matrix(1, 3, length(roiname_all))
 ACE_c2estimate_matric <- matrix(1, 3, length(roiname_all))

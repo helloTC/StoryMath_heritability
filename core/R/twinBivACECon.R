@@ -18,8 +18,8 @@ source("GenEpiHelperFunctions.R")
 # PREPARE DATA
 
 # Load Data
-testData <- read.csv('D:/code/pycharm_code/StoryMath_heritability/data/pc1_act_system_vx100.csv')
-Vars <- c('story', 'math')
+testData <- read.csv('D:/code/pycharm_code/StoryMath_heritability/data/avg_measure_vx100.csv')
+Vars <- c('act_lang', 'act_math')
 nv        <- 2       # number of variables
 ntv       <- nv*2    # number of total variables
 selVars   <- paste(Vars,c(rep(1,nv),rep(2,nv)),sep="")
